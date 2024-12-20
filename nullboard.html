@@ -4650,14 +4650,14 @@
 		    ev.target.nodeName == 'INPUT')
 			return;
 
-		if (ev.ctrlKey && (raw.code == 'KeyZ'))
+		if (ev.ctrlKey && (raw.key == 'z'))
 		{
 			var ok = ev.shiftKey ? redoBoard() : undoBoard();
 			if (! ok)
 				showDing();
 		}
 		else
-		if (ev.ctrlKey && (raw.code == 'KeyY'))
+		if (ev.ctrlKey && (raw.key == 'y'))
 		{
 			if (! redoBoard())
 				showDing();
